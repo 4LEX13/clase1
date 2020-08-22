@@ -17,19 +17,23 @@ public class ClaseInicial {
     public static void main(String[] args) {
         // TODO code application logic here
 //        System.out.println("hola");
+//        System.out.println(Lbro.toString());
+//        System.out.println(ObjetoLbro2.getNumeroPaginas());
+        Lbros ObjetoLbro1 = new Lbros(1, "PROGRAMACION JAVA", 100, "Deitel");
+        Lbros ObjetoLbro2 = new Lbros(2, "PROGRAMACION PHP", 600, "Deitel");
 
-         Lbros ObjetoLbro1 = new Lbros(1,"PROGRAMACION JAVA",100,"Deitel");
-         Lbros ObjetoLbro2 = new Lbros(2,"PROGRAMACION PHP",60,"Deitel"); 
-//         System.out.println(Lbro.toString());
-         
-        
-        if(ObjetoLbro1.getNumeroPaginas()) < ObjetoLbro2.getNumeroPaginas(){
-         
-         
-            System.out.println("El libro 2 es mayor que el libro 1)");
-            
+        ObjetoLbro1.setNumeroPaginas(200);
+//      
+//        
+        if (ObjetoLbro1.getNumeroPaginas() < ObjetoLbro2.getNumeroPaginas()) {
+
+            System.out.println("El libro 2 tiene mayor numero de paginas que el libro 1,rl libro 2 tiene un numrto de paginas de  "+ObjetoLbro2.getNumeroPaginas());
+
+            System.err.println("la informacion del libro 2 es "+ObjetoLbro2.toString());
+        } else {
+            System.out.println("El libro 1 tiene mayor numero de paginas que el libro 2,el libro 1 tiene un numero de paginas de "+ObjetoLbro1.getNumeroPaginas());
+            System.err.println("la informacion del libro es "+ObjetoLbro2.toString());
         }
-        
     }
-    
+
 }

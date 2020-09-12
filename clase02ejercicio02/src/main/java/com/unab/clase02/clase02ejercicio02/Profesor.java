@@ -25,6 +25,12 @@ public class Profesor extends persona {
         this.Titulo = Titulo;
         this.Dedicacion = Dedicacion;
         
+        
+        
+    }
+
+    public Profesor() {
+      
     }
 
     @Override
